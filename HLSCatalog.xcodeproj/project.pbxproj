@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421AAB661CE4FCCB007444CA /* AssetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421AAB651CE4FCCB007444CA /* AssetListTableViewController.swift */; };
+		424BF6CD1CEFB5ED0098BB15 /* AssetPlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424BF6CC1CEFB5ED0098BB15 /* AssetPlaybackManager.swift */; };
+		425DD0A51D0D146900F96325 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425DD0A41D0D146900F96325 /* Asset.swift */; };
+		426CB1A01D054A3F0044B8A7 /* AssetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CB19F1D054A3F0044B8A7 /* AssetListTableViewCell.swift */; };
+		428139F21CE44B7300972264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428139F11CE44B7300972264 /* AppDelegate.swift */; };
+		428139F71CE44B7300972264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428139F51CE44B7300972264 /* Main.storyboard */; };
+		428139F91CE44B7300972264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428139F81CE44B7300972264 /* Assets.xcassets */; };
+		428139FC1CE44B7300972264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428139FA1CE44B7300972264 /* LaunchScreen.storyboard */; };
+		42813A061CE44F9700972264 /* AssetPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42813A051CE44F9700972264 /* AssetPersistenceManager.swift */; };
+		42AA6D151D04CE63002A8B3F /* AssetListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA6D141D04CE63002A8B3F /* AssetListManager.swift */; };
+		42AFF1461CE52D3E006B1BB3 /* Streams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AFF1451CE52D3E006B1BB3 /* Streams.plist */; };
+		47A566AC1E455ED20037191D /* FairplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A566AB1E455ED20037191D /* FairplayManager.swift */; };
+		AEC14E5A1E5D3414004727DA /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E4F1E5D3414004727DA /* GCDWebServer.m */; };
+		AEC14E5B1E5D3414004727DA /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E511E5D3414004727DA /* GCDWebServerConnection.m */; };
+		AEC14E5C1E5D3414004727DA /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E531E5D3414004727DA /* GCDWebServerFunctions.m */; };
+		AEC14E5D1E5D3414004727DA /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E571E5D3414004727DA /* GCDWebServerRequest.m */; };
+		AEC14E5E1E5D3414004727DA /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E591E5D3414004727DA /* GCDWebServerResponse.m */; };
+		AEC14E671E5D341D004727DA /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E601E5D341D004727DA /* GCDWebServerDataRequest.m */; };
+		AEC14E681E5D341D004727DA /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E621E5D341D004727DA /* GCDWebServerFileRequest.m */; };
+		AEC14E691E5D341D004727DA /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E641E5D341D004727DA /* GCDWebServerMultiPartFormRequest.m */; };
+		AEC14E6A1E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E661E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.m */; };
+		AEC14E731E5D3426004727DA /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E6C1E5D3426004727DA /* GCDWebServerDataResponse.m */; };
+		AEC14E741E5D3426004727DA /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E6E1E5D3426004727DA /* GCDWebServerErrorResponse.m */; };
+		AEC14E751E5D3426004727DA /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E701E5D3426004727DA /* GCDWebServerFileResponse.m */; };
+		AEC14E761E5D3426004727DA /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC14E721E5D3426004727DA /* GCDWebServerStreamedResponse.m */; };
+		AEC14E791E5D35D0004727DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC14E781E5D35D0004727DA /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		421AAB651CE4FCCB007444CA /* AssetListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetListTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		424BF6CC1CEFB5ED0098BB15 /* AssetPlaybackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetPlaybackManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		42554D4B1D09EEDC0040BD4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		425DD0A41D0D146900F96325 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		426CB19F1D054A3F0044B8A7 /* AssetListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetListTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		428139EE1CE44B7300972264 /* HLSCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLSCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		428139F11CE44B7300972264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		428139F61CE44B7300972264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		428139F81CE44B7300972264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		428139FB1CE44B7300972264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		428139FD1CE44B7300972264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42813A051CE44F9700972264 /* AssetPersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetPersistenceManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		42AA6D141D04CE63002A8B3F /* AssetListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetListManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		42AFF1451CE52D3E006B1BB3 /* Streams.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Streams.plist; sourceTree = "<group>"; };
+		47A566AB1E455ED20037191D /* FairplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FairplayManager.swift; sourceTree = "<group>"; };
+		AEC14E4D1E5D3413004727DA /* HLSCatalog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HLSCatalog-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEC14E4E1E5D3414004727DA /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		AEC14E4F1E5D3414004727DA /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		AEC14E501E5D3414004727DA /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		AEC14E511E5D3414004727DA /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		AEC14E521E5D3414004727DA /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		AEC14E531E5D3414004727DA /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		AEC14E541E5D3414004727DA /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		AEC14E551E5D3414004727DA /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		AEC14E561E5D3414004727DA /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		AEC14E571E5D3414004727DA /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		AEC14E581E5D3414004727DA /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		AEC14E591E5D3414004727DA /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		AEC14E5F1E5D341D004727DA /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		AEC14E601E5D341D004727DA /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		AEC14E611E5D341D004727DA /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		AEC14E621E5D341D004727DA /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		AEC14E631E5D341D004727DA /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		AEC14E641E5D341D004727DA /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		AEC14E651E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		AEC14E661E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		AEC14E6B1E5D3426004727DA /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		AEC14E6C1E5D3426004727DA /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		AEC14E6D1E5D3426004727DA /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		AEC14E6E1E5D3426004727DA /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		AEC14E6F1E5D3426004727DA /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		AEC14E701E5D3426004727DA /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		AEC14E711E5D3426004727DA /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		AEC14E721E5D3426004727DA /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		AEC14E781E5D35D0004727DA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428139EB1CE44B7300972264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC14E791E5D35D0004727DA /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		425DD0A11D0CF18200F96325 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				425DD0A41D0D146900F96325 /* Asset.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		428139E51CE44B7300972264 = {
+			isa = PBXGroup;
+			children = (
+				42554D4B1D09EEDC0040BD4F /* README.md */,
+				428139F01CE44B7300972264 /* HLSCatalog */,
+				428139EF1CE44B7300972264 /* Products */,
+				AEC14E771E5D35D0004727DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		428139EF1CE44B7300972264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428139EE1CE44B7300972264 /* HLSCatalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428139F01CE44B7300972264 /* HLSCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				AEC14E7A1E5D3AFC004727DA /* GCDWebServer */,
+				4285E1701CF5623E0080B60C /* Managers */,
+				425DD0A11D0CF18200F96325 /* Model */,
+				428139F11CE44B7300972264 /* AppDelegate.swift */,
+				421AAB651CE4FCCB007444CA /* AssetListTableViewController.swift */,
+				426CB19F1D054A3F0044B8A7 /* AssetListTableViewCell.swift */,
+				42AFF1451CE52D3E006B1BB3 /* Streams.plist */,
+				428139F81CE44B7300972264 /* Assets.xcassets */,
+				428139F51CE44B7300972264 /* Main.storyboard */,
+				428139FA1CE44B7300972264 /* LaunchScreen.storyboard */,
+				428139FD1CE44B7300972264 /* Info.plist */,
+				AEC14E4D1E5D3413004727DA /* HLSCatalog-Bridging-Header.h */,
+			);
+			path = HLSCatalog;
+			sourceTree = "<group>";
+		};
+		4285E1701CF5623E0080B60C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				47A566AB1E455ED20037191D /* FairplayManager.swift */,
+				42813A051CE44F9700972264 /* AssetPersistenceManager.swift */,
+				424BF6CC1CEFB5ED0098BB15 /* AssetPlaybackManager.swift */,
+				42AA6D141D04CE63002A8B3F /* AssetListManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AEC14E771E5D35D0004727DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEC14E781E5D35D0004727DA /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEC14E7A1E5D3AFC004727DA /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				AEC14E4E1E5D3414004727DA /* GCDWebServer.h */,
+				AEC14E4F1E5D3414004727DA /* GCDWebServer.m */,
+				AEC14E501E5D3414004727DA /* GCDWebServerConnection.h */,
+				AEC14E511E5D3414004727DA /* GCDWebServerConnection.m */,
+				AEC14E521E5D3414004727DA /* GCDWebServerFunctions.h */,
+				AEC14E531E5D3414004727DA /* GCDWebServerFunctions.m */,
+				AEC14E541E5D3414004727DA /* GCDWebServerHTTPStatusCodes.h */,
+				AEC14E551E5D3414004727DA /* GCDWebServerPrivate.h */,
+				AEC14E561E5D3414004727DA /* GCDWebServerRequest.h */,
+				AEC14E571E5D3414004727DA /* GCDWebServerRequest.m */,
+				AEC14E581E5D3414004727DA /* GCDWebServerResponse.h */,
+				AEC14E591E5D3414004727DA /* GCDWebServerResponse.m */,
+				AEC14E5F1E5D341D004727DA /* GCDWebServerDataRequest.h */,
+				AEC14E601E5D341D004727DA /* GCDWebServerDataRequest.m */,
+				AEC14E611E5D341D004727DA /* GCDWebServerFileRequest.h */,
+				AEC14E621E5D341D004727DA /* GCDWebServerFileRequest.m */,
+				AEC14E631E5D341D004727DA /* GCDWebServerMultiPartFormRequest.h */,
+				AEC14E641E5D341D004727DA /* GCDWebServerMultiPartFormRequest.m */,
+				AEC14E651E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.h */,
+				AEC14E661E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.m */,
+				AEC14E6B1E5D3426004727DA /* GCDWebServerDataResponse.h */,
+				AEC14E6C1E5D3426004727DA /* GCDWebServerDataResponse.m */,
+				AEC14E6D1E5D3426004727DA /* GCDWebServerErrorResponse.h */,
+				AEC14E6E1E5D3426004727DA /* GCDWebServerErrorResponse.m */,
+				AEC14E6F1E5D3426004727DA /* GCDWebServerFileResponse.h */,
+				AEC14E701E5D3426004727DA /* GCDWebServerFileResponse.m */,
+				AEC14E711E5D3426004727DA /* GCDWebServerStreamedResponse.h */,
+				AEC14E721E5D3426004727DA /* GCDWebServerStreamedResponse.m */,
+			);
+			name = GCDWebServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428139ED1CE44B7300972264 /* HLSCatalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42813A001CE44B7300972264 /* Build configuration list for PBXNativeTarget "HLSCatalog" */;
+			buildPhases = (
+				428139EA1CE44B7300972264 /* Sources */,
+				428139EB1CE44B7300972264 /* Frameworks */,
+				428139EC1CE44B7300972264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLSCatalog;
+			productName = HLSCatalog;
+			productReference = 428139EE1CE44B7300972264 /* HLSCatalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428139E61CE44B7300972264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Apple Inc.";
+				TargetAttributes = {
+					428139ED1CE44B7300972264 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8M53443RR5;
+						LastSwiftMigration = 0820;
+						LastSwiftUpdateCheck = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 428139E91CE44B7300972264 /* Build configuration list for PBXProject "HLSCatalog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 428139E51CE44B7300972264;
+			productRefGroup = 428139EF1CE44B7300972264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428139ED1CE44B7300972264 /* HLSCatalog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428139EC1CE44B7300972264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428139FC1CE44B7300972264 /* LaunchScreen.storyboard in Resources */,
+				428139F91CE44B7300972264 /* Assets.xcassets in Resources */,
+				428139F71CE44B7300972264 /* Main.storyboard in Resources */,
+				42AFF1461CE52D3E006B1BB3 /* Streams.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428139EA1CE44B7300972264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC14E5A1E5D3414004727DA /* GCDWebServer.m in Sources */,
+				AEC14E5E1E5D3414004727DA /* GCDWebServerResponse.m in Sources */,
+				AEC14E681E5D341D004727DA /* GCDWebServerFileRequest.m in Sources */,
+				AEC14E671E5D341D004727DA /* GCDWebServerDataRequest.m in Sources */,
+				AEC14E761E5D3426004727DA /* GCDWebServerStreamedResponse.m in Sources */,
+				424BF6CD1CEFB5ED0098BB15 /* AssetPlaybackManager.swift in Sources */,
+				425DD0A51D0D146900F96325 /* Asset.swift in Sources */,
+				42813A061CE44F9700972264 /* AssetPersistenceManager.swift in Sources */,
+				AEC14E6A1E5D341D004727DA /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				AEC14E5B1E5D3414004727DA /* GCDWebServerConnection.m in Sources */,
+				AEC14E751E5D3426004727DA /* GCDWebServerFileResponse.m in Sources */,
+				47A566AC1E455ED20037191D /* FairplayManager.swift in Sources */,
+				421AAB661CE4FCCB007444CA /* AssetListTableViewController.swift in Sources */,
+				42AA6D151D04CE63002A8B3F /* AssetListManager.swift in Sources */,
+				428139F21CE44B7300972264 /* AppDelegate.swift in Sources */,
+				AEC14E741E5D3426004727DA /* GCDWebServerErrorResponse.m in Sources */,
+				AEC14E731E5D3426004727DA /* GCDWebServerDataResponse.m in Sources */,
+				AEC14E5D1E5D3414004727DA /* GCDWebServerRequest.m in Sources */,
+				AEC14E691E5D341D004727DA /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				AEC14E5C1E5D3414004727DA /* GCDWebServerFunctions.m in Sources */,
+				426CB1A01D054A3F0044B8A7 /* AssetListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		428139F51CE44B7300972264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428139F61CE44B7300972264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		428139FA1CE44B7300972264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428139FB1CE44B7300972264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428139FE1CE44B7300972264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		428139FF1CE44B7300972264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42813A011CE44B7300972264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8M53443RR5;
+				INFOPLIST_FILE = HLSCatalog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.stan.hlstest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HLSCatalog/HLSCatalog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		42813A021CE44B7300972264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8M53443RR5;
+				INFOPLIST_FILE = HLSCatalog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.stan.hlstest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HLSCatalog/HLSCatalog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428139E91CE44B7300972264 /* Build configuration list for PBXProject "HLSCatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428139FE1CE44B7300972264 /* Debug */,
+				428139FF1CE44B7300972264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42813A001CE44B7300972264 /* Build configuration list for PBXNativeTarget "HLSCatalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42813A011CE44B7300972264 /* Debug */,
+				42813A021CE44B7300972264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428139E61CE44B7300972264 /* Project object */;
+}

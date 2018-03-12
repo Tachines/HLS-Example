@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HLSCatalog/Managers/FairplayManager.swift"
+            timestampString = "509420196.751776"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "loadLicense(certificate:contentId:loadingRequest:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HLSCatalog.FairplayManager.loadLicense (certificate : Foundation.Data, contentId : Swift.String, loadingRequest : __ObjC.AVAssetResourceLoadingRequest) -&gt; ()"
+                  moduleName = "HLSCatalog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/duncan/Desktop/streamco-ios-spike/HLSCatalog/Managers/FairplayManager.swift"
+                  timestampString = "509425323.746504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "796">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HLSCatalog.FairplayManager.loadLicense (certificate : Foundation.Data, contentId : Swift.String, loadingRequest : __ObjC.AVAssetResourceLoadingRequest) -&gt; ()"
+                  moduleName = "HLSCatalog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/duncan/Desktop/streamco-ios-spike/HLSCatalog/Managers/FairplayManager.swift"
+                  timestampString = "509425323.748171"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "844">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HLSCatalog/Managers/FairplayManager.swift"
+            timestampString = "509425352.348094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "loadCachedCertificate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HLSCatalog.FairplayManager.loadLicense (certificate : Foundation.Data, contentId : Swift.String, loadingRequest : __ObjC.AVAssetResourceLoadingRequest) -&gt; ()"
+                  moduleName = "HLSCatalog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/duncan/Desktop/streamco-ios-spike/HLSCatalog/Managers/FairplayManager.swift"
+                  timestampString = "509425532.427898"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HLSCatalog.FairplayManager.(loadLicense (certificate : Foundation.Data, contentId : Swift.String, loadingRequest : __ObjC.AVAssetResourceLoadingRequest) -&gt; ()).(closure #1)"
+                  moduleName = "HLSCatalog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/duncan/Desktop/streamco-ios-spike/HLSCatalog/Managers/FairplayManager.swift"
+                  timestampString = "509425532.430216"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
